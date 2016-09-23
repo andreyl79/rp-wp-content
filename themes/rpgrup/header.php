@@ -94,10 +94,10 @@
 				<div class="header__bottom">
 					<div class="header-partners-logos">
 						<ul>
-							<li class="partners-logos__list"><a class="partners__link" href="#"><img class="koshel" src="assets/partnr/logo_bw/kosh.png" alt="Samara Koshelev corporation"></a></li>
-							<li class="partners-logos__list"><a class="partners__link" href="#"><img class="bazis" src="assets/partnr/logo_bw/bazis.png" alt="Samara MRSK Bazis"></a></li>
-							<li class="partners-logos__list"><a class="partners__link" href="#"><img class="don" src="assets/partnr/logo_bw/don.png" alt="Samara Noviy Don"></a></li>
-							<li class="partners-logos__list"><a class="partners__link" href="#"><img class="spectr" src="assets/partnr/logo_bw/spectr.png" alt="Samara Spectr Nedvizhimosti"></a></li>
+							<li class="partners-logos__list"><a class="partners__link" href="#"><img class="koshel" src="<?php echo get_template_directory_uri(); ?>/assets/partnr/logo_bw/kosh.png" alt="Samara Koshelev corporation"></a></li>
+							<li class="partners-logos__list"><a class="partners__link" href="#"><img class="bazis" src="<?php echo get_template_directory_uri(); ?>/assets/partnr/logo_bw/bazis.png" alt="Samara MRSK Bazis"></a></li>
+							<li class="partners-logos__list"><a class="partners__link" href="#"><img class="don" src="<?php echo get_template_directory_uri(); ?>/assets/partnr/logo_bw/don.png" alt="Samara Noviy Don"></a></li>
+							<li class="partners-logos__list"><a class="partners__link" href="#"><img class="spectr" src="<?php echo get_template_directory_uri(); ?>/assets/partnr/logo_bw/spectr.png" alt="Samara Spectr Nedvizhimosti"></a></li>
 						</ul>
 					</div>
 				</div>
