@@ -6,7 +6,7 @@
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>RUSSTROY GRUP</title>
+	<title><?php wp_title(); ?></title>
 
 	<?php wp_head(); ?>
 
