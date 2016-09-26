@@ -29,8 +29,6 @@ body
 
 section
 {
-    border-top: 1px solid #374199;
-    border-bottom: 1px solid #374199;
     margin: 2px 0;
     padding: 40px 0;
     position: relative;
@@ -73,7 +71,7 @@ ul
     display: none;
 }
 
-.main-wrapper
+#main-wrapper, #frontpage-wrapper
 {
     margin: 0 auto;
     max-width: 1920px;
@@ -86,7 +84,78 @@ ul
 }
 
 /*-- Header start --*/
+/*-- MAIN HEADER --*/
+#main-wrapper .header__contacts
+{
+    background: #182061;
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
 
+.header
+{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #dfdfdf;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.header__logo
+{
+    background: url("../../assets/logomain.png") no-repeat top left;
+    float: left;
+    height: 93px;
+    width: 120px;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+}
+
+#main-menu .menu-menu-container
+{
+    display: block;
+    float: right;
+    position: relative;
+}
+
+#main-menu .main-nav
+{
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+}
+
+#main-menu .menu-item
+{
+    display: inline-block;
+    margin-right: 35px;
+    line-height: 32px;
+}
+
+#main-menu .menu-item:hover
+{
+    border-bottom: 3px solid #b29b3f;
+}
+
+#main-menu .current-menu-item
+{
+    border-bottom: 3px solid #a7acff;
+}
+
+#main-menu .menu-item a
+{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+/*-- HEADER FRONTPAGE --*/
 .header.index
 {
     background: url("../../assets/main-section-bg.jpg") no-repeat top center;
@@ -174,7 +243,7 @@ ul
 
 /*-- header menu --*/
 
-.header__menu
+#frontpage__header-menu
 {
     display: block;
     height: auto;
@@ -183,22 +252,29 @@ ul
     width: 100%;
 }
 
-.header__menu .main-nav{
+#frontpage__header-menu .menu-menu-container
+{
+    float: none;
+    margin: 0;
     padding: 0;
 }
 
-.header__menu .main-nav li
+#frontpage__header-menu.main-nav{
+    padding: 0;
+}
+
+#frontpage__header-menu .main-nav li
 {
     display: inline-block;
     margin-left: 35px;
 }
 
-.header__menu .main-nav li:first-child
+#frontpage__header-menu .main-nav li:first-child
 {
     margin-left: 0;
 }
 
-.header__menu .main-nav li a
+#frontpage__header-menu .main-nav li a
 {
     color: #ffffff;
     display: block;
@@ -207,12 +283,12 @@ ul
     text-decoration: none;
 }
 
-.header__menu .main-nav li a:hover
+#frontpage__header-menu li:hover
 {
     border-bottom: 3px solid #b29b3f;
 }
 
-.header__menu li.current-menu-item a
+#frontpage__header-menu li.current-menu-item
 {
     border-bottom: 3px solid #a7acff;
 }
