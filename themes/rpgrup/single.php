@@ -1,8 +1,4 @@
-
-
-
 <?php get_header(); ?>
-
 
 <section id="page-projects">
 	<div class="main-wrapper">
@@ -17,9 +13,9 @@
 				<?php echo category_description(); ?>
 			</div>
 			<div class="projects-category__items">
-
 						<?php
-						if ( has_post_thumbnail() ){
+						if ( has_post_thumbnail() )
+						{
 							?>
 							<div class="card-image">
 								<?php the_post_thumbnail( 'full', array( 'class' => 'item-image' )); ?>
