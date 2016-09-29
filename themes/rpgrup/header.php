@@ -7,7 +7,7 @@
 </head>
 <body>
 	<header>
-		<div id="main-wrapper">
+		<div class="header-wrapper">
 			<div class="header__contacts">
 				<div class="container">
 					<div class="header-address__phone">

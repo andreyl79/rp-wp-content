@@ -1,6 +1,6 @@
 <?php
 
-function rp_save_post_admin($post_id, $post, $update){
+function rp_save_post_admin( $post_id, $post, $update ){
 	if ( !$update ){
 		return;
 	}
