@@ -25,10 +25,44 @@
 			</div>
 			<div class="header">
 				<div class="container">
+					<button id="menu-reveal" class="btn-menu float-left">Контакты</button>
 					<div class="header__logo"></div>
+					<button id="menu-main" class="btn-menu float-right">Меню</button>
+					<div id="mobile-header-menu__contacts">
+						<div class="close-button__block align-right">
+							<button class="btn-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</div>
+						<ul>
+							<li>
+								<a href="#">Россия, г.Самара, ул.Агибалова, 48</a>
+							</li>
+							<li>
+								<a href="#">8 (546) 310-03-54</a>
+							</li>
+							<li>
+								<a href="mailto:info@russproektgroup.com">info@russproektgroup.com</a>
+							</li>
+							<li>
+							<a href="#" class="social-link facebook-link"><i class="fa fa-facebook-official"></i>	</a>
+							<a href="#" class="social-link instagram-link"><i class="fa fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div id="mobile-header-menu__main">
+						<div class="close-button__block align-left">
+							<button class="btn-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</div>
+						<div class="mobile-menu__wrapper">
+							<?php wp_nav_menu(array(
+								'theme_location'        =>  'mainmenu',
+								'container'             =>  'nav',
+								'menu_class'            =>  'mobile-main-nav'
+							)); ?>
+						</div>
+					</div>
 					<div id="main-menu">
 						<?php wp_nav_menu(array(
-							'theme_location'        =>  'mainmenu',
+							'theme_location'        =>  'singlemenu',
 							'container'             =>  'nav',
 							'menu_class'            =>  'main-nav'
 						)); ?>

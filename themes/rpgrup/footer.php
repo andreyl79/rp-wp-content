@@ -13,7 +13,6 @@
 		</div>
 	</div>
 </footer>
-</div>
 <div id = "side-nav-mask"></div>
 <?php wp_footer(); ?>
 </body>

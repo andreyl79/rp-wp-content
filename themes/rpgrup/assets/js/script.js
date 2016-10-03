@@ -90,7 +90,14 @@
     }
 
     function nav() {
-        var $menuButton, $sideNav, $sideNavMask, $mainMenuButton, $sideMainNav, $closeButton;
+
+        var $menuButton, 
+        	$sideNav, 
+        	$sideNavMask, 
+        	$mainMenuButton, 
+        	$sideMainNav, 
+        	$closeButton;
+
 
         $menuButton = $('#menu-reveal');
         $mainMenuButton = $('#menu-main');
@@ -103,13 +110,13 @@
         $menuButton.on('click', function() {
             $sideNav.addClass('visible');
             $sideNavMask.addClass('visible');
-			$("html, body").css('position','fixed');
+			//$("html, body").css('position','fixed');
         });
 
         $mainMenuButton.on('click', function(){
         	$sideMainNav.addClass('visible');
         	$sideNavMask.addClass('visible');
-        	$('html,body').css('position','fixed');
+        	//$('html,body').css('position','fixed');
         });
 
         $sideNavMask.add($closeButton).on('click', function() {
@@ -118,13 +125,35 @@
             $sideNavMask.removeClass('visible');
 			$("html, body").css('position','');
         });
-    }
+	}
+
+	function scrollToAnchor(){
+        
+        var $anchorLink;
+
+        //scroll to anchor
+        
+        $anchorLink = $('a[href^="#__"]');
+        $anchorLink.click(function(){
+			var target = $(this.getAttribute('href'));
+			
+			$('html, body').animate
+							({
+								scrollTop: target
+								.offset()
+								.top
+							}, 800);
+			return false;
+		});
+	}
 
 
-$(document).ready(function(){
-	indexbg();
-	readmore();
-	projDescr();
-    nav();
-})
+	$(document).ready(function(){
+		scrollToAnchor();
+		indexbg();
+		readmore();
+		projDescr();
+	    nav();
+	})
+
 })(jQuery);

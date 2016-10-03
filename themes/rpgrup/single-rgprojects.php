@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<section id="single-page">
-	<div class="main-wrapper">
+<div id="main-wrapper">
+	<section id="single-page">
 		<div class="container">
 			<div class="single-page__item">
 				<?php 
@@ -10,6 +10,9 @@
 						while (have_posts()) :
 							the_post();
 				?>
+					<h3 class="item-name"> 
+						<?php the_title(); ?>
+					</h3>
 					<div class="single-page__content">
 				<?php
 								the_content();
@@ -22,7 +25,7 @@
 				 ?>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+</div>
 
 <?php get_footer(); ?>
